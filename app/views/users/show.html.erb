@@ -10,11 +10,5 @@
   <%= @user.email %>
 </p>
 
-<p>
-  <h3>Microposts (<%= @user.microposts.count %>)</h3>
-  <strong>Latest Post:</strong>
-  <%= @user.microposts.last.content %>
-</p>
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
